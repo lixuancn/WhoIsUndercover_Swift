@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D05B4431AC251C8006F5508 /* UndercoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05B4421AC251C8006F5508 /* UndercoverViewController.swift */; };
+		3D05B4451AC25233006F5508 /* UndercoverRuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05B4441AC25233006F5508 /* UndercoverRuleViewController.swift */; };
+		3D05B4471AC25244006F5508 /* UndercoverGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05B4461AC25244006F5508 /* UndercoverGameViewController.swift */; };
+		3D19D9601AC648F600CBC29D /* headImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D19D95F1AC648F600CBC29D /* headImage.jpg */; };
+		3DA1C6321AC3FE2200B37107 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA1C6311AC3FE2200B37107 /* CameraService.swift */; };
+		3DE775621AB9733300449663 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE775611AB9733300449663 /* AppDelegate.swift */; };
+		3DE775641AB9733300449663 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE775631AB9733300449663 /* ViewController.swift */; };
+		3DE775671AB9733300449663 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE775651AB9733300449663 /* Main.storyboard */; };
+		3DE775691AB9733300449663 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE775681AB9733300449663 /* Images.xcassets */; };
+		3DE7756C1AB9733300449663 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DE7756A1AB9733300449663 /* LaunchScreen.xib */; };
+		3DE775781AB9733300449663 /* ____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE775771AB9733300449663 /* ____Tests.swift */; };
+		3DE775901AB9767700449663 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE775891AB975FD00449663 /* Alamofire.framework */; };
+		3DE775911AB9767700449663 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE775891AB975FD00449663 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3DE775961AB976EA00449663 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE775951AB976EA00449663 /* RequestService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DE775721AB9733300449663 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DE775541AB9733300449663 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DE7755B1AB9733300449663;
+			remoteInfo = "聚会游戏";
+		};
+		3DE775881AB975FD00449663 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DE775811AB975FD00449663 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		3DE7758A1AB975FD00449663 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DE775811AB975FD00449663 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		3DE7758C1AB975FD00449663 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DE775811AB975FD00449663 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		3DE7758E1AB975FD00449663 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DE775811AB975FD00449663 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		3DE775921AB9767700449663 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DE775811AB975FD00449663 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3DE775941AB9767700449663 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3DE775911AB9767700449663 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3D05B4421AC251C8006F5508 /* UndercoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UndercoverViewController.swift; sourceTree = "<group>"; };
+		3D05B4441AC25233006F5508 /* UndercoverRuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UndercoverRuleViewController.swift; sourceTree = "<group>"; };
+		3D05B4461AC25244006F5508 /* UndercoverGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UndercoverGameViewController.swift; sourceTree = "<group>"; };
+		3D19D95F1AC648F600CBC29D /* headImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = headImage.jpg; sourceTree = "<group>"; };
+		3DA1C6311AC3FE2200B37107 /* CameraService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		3DE7755C1AB9733300449663 /* 聚会游戏.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "聚会游戏.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DE775601AB9733300449663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE775611AB9733300449663 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DE775631AB9733300449663 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DE775661AB9733300449663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DE775681AB9733300449663 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3DE7756B1AB9733300449663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3DE775711AB9733300449663 /* 聚会游戏Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "聚会游戏Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DE775761AB9733300449663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE775771AB9733300449663 /* ____Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "____Tests.swift"; sourceTree = "<group>"; };
+		3DE775811AB975FD00449663 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		3DE775951AB976EA00449663 /* RequestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DE775591AB9733300449663 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE775901AB9767700449663 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE7756E1AB9733300449663 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D05B43E1AC2512B006F5508 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3DA1C6311AC3FE2200B37107 /* CameraService.swift */,
+				3DE775951AB976EA00449663 /* RequestService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		3DA1C61B1AC3A27D00B37107 /* headImage */ = {
+			isa = PBXGroup;
+			children = (
+				3D19D95F1AC648F600CBC29D /* headImage.jpg */,
+			);
+			name = headImage;
+			path = share;
+			sourceTree = "<group>";
+		};
+		3DE775531AB9733300449663 = {
+			isa = PBXGroup;
+			children = (
+				3DE7755E1AB9733300449663 /* 聚会游戏 */,
+				3DE775741AB9733300449663 /* 聚会游戏Tests */,
+				3DE7755D1AB9733300449663 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DE7755D1AB9733300449663 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DE7755C1AB9733300449663 /* 聚会游戏.app */,
+				3DE775711AB9733300449663 /* 聚会游戏Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DE7755E1AB9733300449663 /* 聚会游戏 */ = {
+			isa = PBXGroup;
+			children = (
+				3DE775811AB975FD00449663 /* Alamofire.xcodeproj */,
+				3DE775611AB9733300449663 /* AppDelegate.swift */,
+				3DE775631AB9733300449663 /* ViewController.swift */,
+				3D05B4421AC251C8006F5508 /* UndercoverViewController.swift */,
+				3D05B4441AC25233006F5508 /* UndercoverRuleViewController.swift */,
+				3D05B4461AC25244006F5508 /* UndercoverGameViewController.swift */,
+				3D05B43E1AC2512B006F5508 /* Service */,
+				3DE775651AB9733300449663 /* Main.storyboard */,
+				3DE775681AB9733300449663 /* Images.xcassets */,
+				3DE7756A1AB9733300449663 /* LaunchScreen.xib */,
+				3DE7755F1AB9733300449663 /* Supporting Files */,
+			);
+			path = "聚会游戏";
+			sourceTree = "<group>";
+		};
+		3DE7755F1AB9733300449663 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DA1C61B1AC3A27D00B37107 /* headImage */,
+				3DE775601AB9733300449663 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DE775741AB9733300449663 /* 聚会游戏Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3DE775771AB9733300449663 /* ____Tests.swift */,
+				3DE775751AB9733300449663 /* Supporting Files */,
+			);
+			path = "聚会游戏Tests";
+			sourceTree = "<group>";
+		};
+		3DE775751AB9733300449663 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DE775761AB9733300449663 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DE775821AB975FD00449663 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DE775891AB975FD00449663 /* Alamofire.framework */,
+				3DE7758B1AB975FD00449663 /* Alamofire.framework */,
+				3DE7758D1AB975FD00449663 /* Alamofire iOS Tests.xctest */,
+				3DE7758F1AB975FD00449663 /* Alamofire OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DE7755B1AB9733300449663 /* 聚会游戏 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DE7757B1AB9733300449663 /* Build configuration list for PBXNativeTarget "聚会游戏" */;
+			buildPhases = (
+				3DE775581AB9733300449663 /* Sources */,
+				3DE775591AB9733300449663 /* Frameworks */,
+				3DE7755A1AB9733300449663 /* Resources */,
+				3DE775941AB9767700449663 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DE775931AB9767700449663 /* PBXTargetDependency */,
+			);
+			name = "聚会游戏";
+			productName = "聚会游戏";
+			productReference = 3DE7755C1AB9733300449663 /* 聚会游戏.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DE775701AB9733300449663 /* 聚会游戏Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DE7757E1AB9733300449663 /* Build configuration list for PBXNativeTarget "聚会游戏Tests" */;
+			buildPhases = (
+				3DE7756D1AB9733300449663 /* Sources */,
+				3DE7756E1AB9733300449663 /* Frameworks */,
+				3DE7756F1AB9733300449663 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DE775731AB9733300449663 /* PBXTargetDependency */,
+			);
+			name = "聚会游戏Tests";
+			productName = "聚会游戏Tests";
+			productReference = 3DE775711AB9733300449663 /* 聚会游戏Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DE775541AB9733300449663 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = lane;
+				TargetAttributes = {
+					3DE7755B1AB9733300449663 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					3DE775701AB9733300449663 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 3DE7755B1AB9733300449663;
+					};
+				};
+			};
+			buildConfigurationList = 3DE775571AB9733300449663 /* Build configuration list for PBXProject "聚会游戏" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DE775531AB9733300449663;
+			productRefGroup = 3DE7755D1AB9733300449663 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3DE775821AB975FD00449663 /* Products */;
+					ProjectRef = 3DE775811AB975FD00449663 /* Alamofire.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				3DE7755B1AB9733300449663 /* 聚会游戏 */,
+				3DE775701AB9733300449663 /* 聚会游戏Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3DE775891AB975FD00449663 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 3DE775881AB975FD00449663 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DE7758B1AB975FD00449663 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 3DE7758A1AB975FD00449663 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DE7758D1AB975FD00449663 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 3DE7758C1AB975FD00449663 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DE7758F1AB975FD00449663 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 3DE7758E1AB975FD00449663 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DE7755A1AB9733300449663 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE775671AB9733300449663 /* Main.storyboard in Resources */,
+				3D19D9601AC648F600CBC29D /* headImage.jpg in Resources */,
+				3DE7756C1AB9733300449663 /* LaunchScreen.xib in Resources */,
+				3DE775691AB9733300449663 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE7756F1AB9733300449663 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DE775581AB9733300449663 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE775641AB9733300449663 /* ViewController.swift in Sources */,
+				3D05B4471AC25244006F5508 /* UndercoverGameViewController.swift in Sources */,
+				3D05B4451AC25233006F5508 /* UndercoverRuleViewController.swift in Sources */,
+				3D05B4431AC251C8006F5508 /* UndercoverViewController.swift in Sources */,
+				3DE775961AB976EA00449663 /* RequestService.swift in Sources */,
+				3DE775621AB9733300449663 /* AppDelegate.swift in Sources */,
+				3DA1C6321AC3FE2200B37107 /* CameraService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE7756D1AB9733300449663 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE775781AB9733300449663 /* ____Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DE775731AB9733300449663 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DE7755B1AB9733300449663 /* 聚会游戏 */;
+			targetProxy = 3DE775721AB9733300449663 /* PBXContainerItemProxy */;
+		};
+		3DE775931AB9767700449663 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 3DE775921AB9767700449663 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DE775651AB9733300449663 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DE775661AB9733300449663 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DE7756A1AB9733300449663 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DE7756B1AB9733300449663 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DE775791AB9733300449663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DE7757A1AB9733300449663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DE7757C1AB9733300449663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "聚会游戏/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3DE7757D1AB9733300449663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "聚会游戏/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3DE7757F1AB9733300449663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "聚会游戏Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/聚会游戏.app/聚会游戏";
+			};
+			name = Debug;
+		};
+		3DE775801AB9733300449663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "聚会游戏Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/聚会游戏.app/聚会游戏";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DE775571AB9733300449663 /* Build configuration list for PBXProject "聚会游戏" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DE775791AB9733300449663 /* Debug */,
+				3DE7757A1AB9733300449663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DE7757B1AB9733300449663 /* Build configuration list for PBXNativeTarget "聚会游戏" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DE7757C1AB9733300449663 /* Debug */,
+				3DE7757D1AB9733300449663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DE7757E1AB9733300449663 /* Build configuration list for PBXNativeTarget "聚会游戏Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DE7757F1AB9733300449663 /* Debug */,
+				3DE775801AB9733300449663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DE775541AB9733300449663 /* Project object */;
+}
