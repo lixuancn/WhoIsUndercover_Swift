@@ -5,3 +5,6 @@
 开源协议：Do What The Fuck You Want To Public License
 
 Developer Blog：http://www.lanecn.com
+
+
+这个项目还没搞完。是个半成品
